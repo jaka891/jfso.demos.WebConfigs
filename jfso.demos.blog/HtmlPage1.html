@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+
+    <!-- Include required JS files -->
+    <script type="text/javascript" src="Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+
+    <!--
+    At least one brush, here we choose JS. You need to include a brush for every 
+    language you want to highlight
+-->
+    <script type="text/javascript" src="Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="Scripts/SyntaxHighlighter/scripts/shBrushXml.js"></script>
+    <!-- Include *at least* the core style and default theme -->
+    <link href="Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="Scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+    <pre class="brush:xml" name="code">
+&lt;configuration&gt;
+  &lt;system   .web=&quot;&quot;&gt;
+    &lt;compilation debug=&quot;true&quot; targetframework=&quot;4.5&quot;&gt;
+    &lt;httpruntime targetframework=&quot;4.5&quot;&gt;
+  &lt;/httpruntime&gt;&lt;/compilation&gt;&lt;/system&gt;
+
+  &lt;connectionstrings&gt;
+    &lt;add name=&quot;MDBContainer&quot; connectionstring=&quot;metadata=res://*/MDB.csdl|res://*/MDB.ssdl|res://*/MDB.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;data source=BRB-PC;initial catalog=MDB;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&amp;quot;&quot; providername=&quot;System.Data.EntityClient&quot;&gt;
+  &lt;/add&gt;&lt;/connectionstrings&gt;
+
+  &lt;appsettings&gt;
+    &lt;add key=&quot;emailAddress&quot; value=&quot;teste@local.com&quot; /&gt;
+  &lt;/appsettings&gt;
+
+
+  &lt;system   .servicemodel=&quot;&quot;&gt;
+    &lt;bindings&gt;
+      &lt;basichttpbinding&gt;
+        &lt;binding name=&quot;BasicHttpBinding_IService1&quot;&gt;
+      &lt;/binding&gt;&lt;/basichttpbinding&gt;
+    &lt;/bindings&gt;
+    &lt;client&gt;
+      &lt;endpoint name=&quot;BasicHttpBinding_IService1&quot; address=&quot;http://localhost:62822/Service1.svc&quot; binding=&quot;basicHttpBinding&quot; bindingconfiguration=&quot;BasicHttpBinding_IService1&quot; contract=&quot;MyService.IService1&quot;&gt;
+    &lt;/endpoint&gt;&lt;/client&gt;
+  &lt;/system&gt;
+&lt;/configuration&gt;
+    </pre>
+
+
+
+    <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+</body>
+</html>
